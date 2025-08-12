@@ -23,9 +23,6 @@ retriever = vectorstore.as_retriever()
 qa_chain = build_chat_chain(retriever)
 
 def main():
-    print("📚 Smart Librarian - Chatbot RAG 🤖")
-    print("Scrie 'exit' ca să ieși.\n")
-
     while True:
         query = input("Tu: ")
         if query.lower() in ["exit", "quit"]:
